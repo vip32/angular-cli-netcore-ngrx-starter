@@ -21,8 +21,8 @@ steps:
       version: 8.0.x
 
   - script: |
-      npm run dotnet:coverage
-    displayName: 'Install dotnet-coverage'
+      npm run dotnet:tool:restore
+    displayName: 'Install dotnet tools'
 
   - script: |
       npm ci
